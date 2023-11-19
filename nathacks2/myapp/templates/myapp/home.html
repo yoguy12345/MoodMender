@@ -1,0 +1,55 @@
+<!-- myapp/templates/myapp/item_list.html -->
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<style>html {
+    /* background-image: url(https://i.pinimg.com/originals/5a/36/cd/5a36cd1a1bee0cc6f63c5679b2426fe2.jpg); */
+    background: linear-gradient(to bottom, #333333, #555555);
+    color: #fff; /* Set text color to white for better contrast */
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #088F8F;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
+    padding-bottom: auto;
+    padding: 0px;
+    max-width: 700px;
+}
+
+#webcam {
+    align-items: center;
+    }
+
+</style>
+<h1>Focus Master</h1>
+<body>
+<div>
+    <video id="webcam" width="640" height="480" autoplay></video>
+</div>
+
+<script>
+    // JavaScript code to access the webcam
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+            var video = document.getElementById('webcam');
+            video.srcObject = stream;
+        })
+        .catch(function (error) {
+            console.error('Error accessing webcam:', error);
+        });
+</script></body>
+
+{% endblock %}
