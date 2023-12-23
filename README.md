@@ -1,6 +1,8 @@
 MoodMender: Tailored Comfort for You.
 
-Talk to a psychologist on the internet for free!
+Talk to a GPT-prompted psychologist on the internet for free!
+
+ChatGPT was prompted to become a psychologist specialising in anxiety and depression.
 
 GPT that responds to how you are feeling
 
