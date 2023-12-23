@@ -1,5 +1,7 @@
 MoodMender: Tailored Comfort for You.
 
+Talk to a psychologist on the internet for free!
+
 GPT that responds to how you are feeling
 
 an app desighted to regulate your emotions through the use of computer vision, and the Muse2 (optional)
