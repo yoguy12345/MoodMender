@@ -1,2 +1,3 @@
 opencv-python-headless
 openai
+camera_input_live
